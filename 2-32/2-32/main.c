@@ -3,13 +3,13 @@
 
 int main()
 {
-	float weight, height,bmi;
+	double weight, height,bmi;
 
 	printf("體重(kg) 身高(m):");
-	scanf_s("%f%f", &weight,&height);
+	scanf_s("%lf%lf", &weight,&height);
 
 	bmi = weight / (height*height);
-	printf("\nBMI= %.5f\n\n", bmi);
+	printf("\nBMI= %lf\n\n", bmi);
 
 	printf("BMI VALUES\n");
 	printf("Underweight: less than 18.5\n");
